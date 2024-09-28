@@ -1,0 +1,6 @@
+const state = {
+    view:{
+
+    },
+    va
+}

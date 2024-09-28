@@ -22,7 +22,7 @@ function randomSquare() {
 }
 
 function moveEnemy() {
-    state.values.timerId = setInterval(randomSquare, state.values.gameVelocity);
+    state.values.timerId = setInterval(randomSquare, state.);
 }
 
 function addListenerHitBox() {

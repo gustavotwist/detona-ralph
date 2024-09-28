@@ -5,10 +5,7 @@ const state = {
     timeLeft: document.querySelector("#time-left"),
     score: document.querySelector("#score"),    
     },
-    values:{
-      timerId: null,
-      gameVelocity: 1000  
-    },
+    values:{},
 };
 
 function randomSquare() {
@@ -21,9 +18,7 @@ function randomSquare() {
     randomSquare.classList.add("enemy"); 
 }
 
-function moveEnemy() {
-    state.values.timerId = setInterval(randomSquare, state.values.gameVelocity);
-}
+function moveEnemy
 
 function addListenerHitBox() {
     state.view.squares.forEach((square) => {
@@ -32,7 +27,7 @@ function addListenerHitBox() {
 }
 
 function initialize() {
-    moveEnemy();
+    randomSquare();
 }
 
 initialize();
