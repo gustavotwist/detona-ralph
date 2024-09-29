@@ -34,7 +34,7 @@ function addListenerHitBox() {
         if(square.id === state.values.hitPosition) {
             state.values.result++
             state.view.score.textContent = state.values.result;
-            state.values.hitPosition = null;
+            state.values.hitPosition = null
         }
       });
     });

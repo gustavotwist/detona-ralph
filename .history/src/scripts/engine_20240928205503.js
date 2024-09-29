@@ -8,8 +8,7 @@ const state = {
     values:{
       timerId: null,
       gameVelocity: 1000,
-      hitPosition: 0,
-      result: 0,  
+      hitPosition: 0,  
     },
 };
 
@@ -32,9 +31,7 @@ function addListenerHitBox() {
     state.view.squares.forEach((square) => {
       square.addEventListener("mousedown", () => {
         if(square.id === state.values.hitPosition) {
-            state.values.result++
-            state.view.score.textContent = state.values.result;
-            state.values.hitPosition = null;
+            
         }
       });
     });
