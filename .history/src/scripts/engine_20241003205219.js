@@ -22,16 +22,10 @@ function countDown() {
     state.view.timeLeft.textContent = state.values.curretTime;
 
     if (state.values.curretTime <= 0) {
-        clearInterval(state.actions.countDownTimerId);
-        clearInterval(state.actions.timerId);
+        clearInterval(state.actions.countDownTimerId)
+        
         alert("Game Over! O seu resultado foi: " + state.values.result);
     }
-}
-
-function playSound(audioName){
-    let audio = new Audio(`./src/audios/${audioName}.m4a`);
-    audio.volume = 0.2;
-    audio.play();
 }
 
 function randomSquare() {
@@ -53,7 +47,6 @@ function addListenerHitBox() {
             state.values.result++
             state.view.score.textContent = state.values.result;
             state.values.hitPosition = null;
-            playSound("hit");
         }
       });
     });
